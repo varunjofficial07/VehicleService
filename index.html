@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Service Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">AutoCare Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#booking">Book Now</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Reliable Vehicle Service at Your Fingertips</h2>
+      <p>Book, track, and manage all your vehicle needs in one place.</p>
+      <a href="#booking" class="btn">Book a Service</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Oil Change</h3>
+        <p>Keep your engine running smoothly with our quick oil change service.</p>
+      </div>
+      <div class="card">
+        <h3>Engine Check</h3>
+        <p>Complete diagnostics for your vehicle's engine and performance.</p>
+      </div>
+      <div class="card">
+        <h3>Tyre Replacement</h3>
+        <p>Best-in-class tyre change and balancing for all vehicle types.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book a Service</h2>
+    <form id="serviceForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Vehicle Model" required />
+      <select>
+        <option selected disabled>Select Service</option>
+        <option>Oil Change</option>
+        <option>Engine Check</option>
+        <option>Tyre Replacement</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 AutoCare Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
